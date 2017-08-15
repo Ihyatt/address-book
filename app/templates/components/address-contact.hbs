@@ -1,0 +1,16 @@
+{{one-way-input
+  name
+  update=(action (mut name))
+  keyEvents=(hash
+    13=(action 'onEnter')
+  )
+}}
+
+
+<div>
+{{#each contacts as |contact|}}
+<div>
+  {{ contact.name }} <button {{action removeContact contact}}>Remove</button>
+</div>
+{{/each}}
+</div>

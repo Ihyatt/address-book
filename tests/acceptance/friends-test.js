@@ -10,3 +10,6 @@ test('visiting /friends', function(assert) {
     assert.equal(currentURL(), '/friends');
   });
 });
+
+
+
